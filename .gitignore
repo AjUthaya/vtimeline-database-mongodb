@@ -6,6 +6,14 @@ build/
 ## Logs
 *.log*
 
+## Configs
+local.json
+local.js
+local.php
+appsettings.json
+secret.*
+secrets.*
+
 ## Environment
 .env
 .env.local
@@ -24,9 +32,6 @@ test-results.xml
 # Language Specific
 ##########
 
-## JavaScript
-local.js
-
 ## NPM
 package-lock.json
 node_modules/
@@ -34,8 +39,10 @@ node_modules/
 ## NextJS
 .next/
 
-## PHP
-local.php
+## .NET
+Debug
+bin/
+*.cache
 
 ## WordPress
 wp-config.php
@@ -64,11 +71,4 @@ wp-content/mu-plugins/stop-long-comments.php
 wp-content/mysql.sql
 wp-content/plugins/hyperdb*
 
-## Kubernetes
-secret.*
-secrets.*
 
-## dotnet
-Debug
-bin/
-*.cache
