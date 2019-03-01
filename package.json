@@ -1,0 +1,55 @@
+{
+  "name": "vtimeline-database-mysql",
+  "version": "1.0.0",
+  "description": "Vertical timeline database",
+  "homepage": "",
+  "main": "index.js",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AjUthaya/vtimeline-database-mysql.git",
+    "ssh": "git@github.com:AjUthaya/vtimeline-database-mysql.git"
+  },
+  "scripts": {
+    "start": "",
+    "start:staging": "",
+    "start:prod": "",
+    "db:setup": "npm run db:migrate && npm run db:seed",
+    "db:setup:migrate": "node_modules/.bin/sequelize db:migrate",
+    "db:setup:seed": "node_modules/.bin/sequelize db:seed:all",
+    "db:teardown": "npm run db:teardown:migrate && db:teardown db:teardown:seed",
+    "db:teardown:migrate": "node_modules/.bin/sequelize db:migrate:undo:all",
+    "db:teardown:seed": "node_modules/.bin/sequelize db:seed:undo:all",
+    "db:refresh": "npm run db:teardown && npm run db:setup",
+    "build": "",
+    "build:staging": "",
+    "build:prod": "",
+    "test": "",
+    "test:open": "",
+    "test:staging": "",
+    "test:prod": ""
+  },
+  "dependencies": {
+    "sequelize": "^4.42.1"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^5.4.0"
+  },
+  "engines": {
+    "node": ">= 10.15.0",
+    "npm": ">= 6.4.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "author": {
+    "name": "AJ",
+    "email": "",
+    "url": ""
+  },
+  "contributors": [
+    {}
+  ]
+}
