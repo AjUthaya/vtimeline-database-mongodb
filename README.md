@@ -41,6 +41,10 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 1. Coming soon
 
+## Architecture
+
+![application_architecture](https://imgur.com/t9ZFuZz.png)
+
 ## Data model
 
 ![data_model](https://imgur.com/H8bpB6n.png)
