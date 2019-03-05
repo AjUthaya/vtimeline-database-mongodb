@@ -8,10 +8,18 @@ module.exports = {
     dialect: "mysql",
     logging: true
   },
-  test: {
+  qa: {
     username: "root",
     password: "root",
-    database: "vtimeline_test",
+    database: "vtimeline_qa",
+    host: "127.0.0.1",
+    port: "8889",
+    dialect: "mysql"
+  },
+  staging: {
+    username: "root",
+    password: "root",
+    database: "vtimeline_staging",
     host: "127.0.0.1",
     port: "8889",
     dialect: "mysql"

@@ -3,33 +3,33 @@
 const tableName = "meta";
 
 module.exports = {
-  up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable(tableName, {
+  up: (sequelize, dataTypes) => {
+    return sequelize.createTable(tableName, {
       id: {
         allowNull: false,
         autoIncrement: true,
-        type: Sequelize.UUID,
+        type: dataTypes.INTEGER,
         unique: true,
         primaryKey: true,
-        defaultValue: Sequelize.INTEGER
+        defaultValue: dataTypes.INTEGER
       },
       created_at: {
         allowNull: false,
-        type: Sequelize.DATE,
-        defaultValue: Sequelize.literal("CURRENT_TIMESTAMP")
+        type: dataTypes.DATE,
+        defaultValue: dataTypes.literal("CURRENT_TIMESTAMP")
       },
       updated_at: {
         allowNull: true,
-        type: Sequelize.DATE
+        type: dataTypes.DATE
       },
       deleted_at: {
         allowNull: true,
-        type: Sequelize.DATE
+        type: dataTypes.DATE
       }
     });
   },
 
-  down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable(tableName);
+  down: (sequelize, dataTypes) => {
+    return sequelize.dropTable(tableName);
   }
 };
