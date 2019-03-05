@@ -6,21 +6,8 @@ build/
 ## Logs
 *.log*
 
-## Configs
-config.json
-local.json
-local.js
-local.php
-appsettings.json
-secret.*
-secrets.*
 
 ## Environment
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
 .DS_Store
 supervisord.pid
 
@@ -46,7 +33,6 @@ bin/
 *.cache
 
 ## WordPress
-wp-config.php
 wp-content/uploads/
 wp-content/blogs.dir/
 wp-content/upgrade/*
@@ -71,5 +57,3 @@ wp-content/mu-plugins/force-strong-passwords
 wp-content/mu-plugins/stop-long-comments.php
 wp-content/mysql.sql
 wp-content/plugins/hyperdb*
-
-

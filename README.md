@@ -6,8 +6,11 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 ## Prerequisites
 
-- [NodeJS](https://nodejs.org/)
-- [MySQL](https://www.mysql.com/)
+- [NodeJS](https://nodejs.org/) - Node.js is an open-source, cross-platform JavaScript run-time environment that executes JavaScript code outside of a browser.
+
+- [MySQL](https://www.mysql.com/) - MySQL is an open source relational database management system.
+
+- [Docker](https://www.docker.com/products/docker-desktop) - Docker is a computer program that performs operating-system-level virtualization, also known as "containerization".
 
 ## Configuration
 

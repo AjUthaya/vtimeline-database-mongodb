@@ -14,7 +14,7 @@
     "start": "",
     "start:staging": "",
     "start:prod": "",
-    "db:setup": "npm run db:migrate && npm run db:seed",
+    "db:setup": "npm run db:setup:migrate && npm run db:setup:seed",
     "db:setup:migrate": "node_modules/.bin/sequelize db:migrate",
     "db:setup:seed": "node_modules/.bin/sequelize db:seed:all",
     "db:teardown": "npm run db:teardown:migrate && db:teardown db:teardown:seed",
@@ -30,6 +30,7 @@
     "test:prod": ""
   },
   "dependencies": {
+    "mysql2": "^1.6.5",
     "sequelize": "^4.42.1"
   },
   "devDependencies": {
