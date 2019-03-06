@@ -13,6 +13,14 @@ module.exports = {
         primaryKey: true,
         defaultValue: dataTypes.INTEGER
       },
+      role_id: {
+        allowNull: false,
+        type: dataTypes.INTEGER
+      },
+      permission_id: {
+        allowNull: false,
+        type: dataTypes.INTEGER
+      },
       created_at: {
         allowNull: false,
         type: dataTypes.DATE,

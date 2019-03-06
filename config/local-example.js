@@ -1,19 +1,19 @@
 module.exports = {
   development: {
-    username: "root",
-    password: "root",
+    username: "app",
+    password: "iforgot",
     database: "vtimeline_development",
     host: "127.0.0.1",
-    port: "8889",
+    port: "3306",
     dialect: "mysql",
-    logging: true
+    logging: false
   },
   qa: {
     username: "root",
     password: "root",
     database: "vtimeline_qa",
     host: "127.0.0.1",
-    port: "8889",
+    port: "3306",
     dialect: "mysql"
   },
   staging: {
@@ -21,7 +21,7 @@ module.exports = {
     password: "root",
     database: "vtimeline_staging",
     host: "127.0.0.1",
-    port: "8889",
+    port: "3306",
     dialect: "mysql"
   },
   production: {
@@ -29,7 +29,7 @@ module.exports = {
     password: "root",
     database: "vtimeline_production",
     host: "127.0.0.1",
-    port: "8889",
+    port: "3306",
     dialect: "mysql"
   }
 };

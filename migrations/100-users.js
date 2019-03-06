@@ -13,6 +13,32 @@ module.exports = {
         primaryKey: true,
         defaultValue: dataTypes.INTEGER
       },
+      firstname: {
+        allowNull: false,
+        type: dataTypes.STRING
+      },
+      lastname: {
+        allowNull: false,
+        type: dataTypes.STRING
+      },
+      email: {
+        allowNull: false,
+        type: dataTypes.STRING,
+        unique: true
+      },
+      password: {
+        allowNull: false,
+        type: dataTypes.STRING
+      },
+      verified: {
+        allowNull: false,
+        type: dataTypes.BOOLEAN,
+        defaultValue: 0
+      },
+      verification_string: {
+        allowNull: true,
+        type: dataTypes.STRING
+      },
       created_at: {
         allowNull: false,
         type: dataTypes.DATE,

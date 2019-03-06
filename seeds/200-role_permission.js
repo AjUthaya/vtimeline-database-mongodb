@@ -10,7 +10,8 @@ module.exports = {
       },
       [
         {
-          created_at: dataTypes.literal("CURRENT_TIMESTAMP")
+          role_id: 1,
+          permission_id: 1
         }
       ],
       {}

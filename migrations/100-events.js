@@ -13,6 +13,31 @@ module.exports = {
         primaryKey: true,
         defaultValue: dataTypes.INTEGER
       },
+      revision: {
+        type: dataTypes.INTEGER,
+        defaultValue: 1,
+        allowNull: false
+      },
+      img_url: {
+        type: dataTypes.STRING,
+        allowNull: true
+      },
+      title: {
+        type: dataTypes.STRING,
+        allowNull: false
+      },
+      description: {
+        type: dataTypes.STRING,
+        allowNull: true
+      },
+      start_date: {
+        type: dataTypes.DATE,
+        allowNull: false
+      },
+      end_date: {
+        type: dataTypes.DATE,
+        allowNull: false
+      },
       created_at: {
         allowNull: false,
         type: dataTypes.DATE,

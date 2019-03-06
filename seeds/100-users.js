@@ -10,7 +10,10 @@ module.exports = {
       },
       [
         {
-          created_at: dataTypes.literal("CURRENT_TIMESTAMP")
+          firstname: "test",
+          lastname: "test",
+          email: "test",
+          password: "test"
         }
       ],
       {}

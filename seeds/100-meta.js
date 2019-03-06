@@ -10,7 +10,8 @@ module.exports = {
       },
       [
         {
-          created_at: dataTypes.literal("CURRENT_TIMESTAMP")
+          key: dataTypes.literal("CURRENT_TIMESTAMP"),
+          value: "test"
         }
       ],
       {}

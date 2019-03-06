@@ -10,7 +10,7 @@ module.exports = {
       },
       [
         {
-          created_at: dataTypes.literal("CURRENT_TIMESTAMP")
+          ip_address: dataTypes.literal("CURRENT_TIMESTAMP")
         }
       ],
       {}

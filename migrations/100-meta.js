@@ -13,6 +13,14 @@ module.exports = {
         primaryKey: true,
         defaultValue: dataTypes.INTEGER
       },
+      key: {
+        allowNull: false,
+        type: dataTypes.STRING
+      },
+      value: {
+        allowNull: false,
+        type: dataTypes.STRING
+      },
       created_at: {
         allowNull: false,
         type: dataTypes.DATE,

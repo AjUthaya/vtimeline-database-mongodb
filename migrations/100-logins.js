@@ -13,6 +13,18 @@ module.exports = {
         primaryKey: true,
         defaultValue: dataTypes.INTEGER
       },
+      ip_address: {
+        type: dataTypes.STRING,
+        allowNull: false
+      },
+      browser: {
+        type: dataTypes.STRING,
+        allowNull: true
+      },
+      device: {
+        type: dataTypes.STRING,
+        allowNull: true
+      },
       created_at: {
         allowNull: false,
         type: dataTypes.DATE,
