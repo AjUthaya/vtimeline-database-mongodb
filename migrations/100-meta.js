@@ -26,14 +26,8 @@ module.exports = {
         type: dataTypes.DATE,
         defaultValue: dataTypes.literal("CURRENT_TIMESTAMP")
       },
-      updated_at: {
-        allowNull: true,
-        type: dataTypes.DATE
-      },
-      deleted_at: {
-        allowNull: true,
-        type: dataTypes.DATE
-      }
+      updated_at: dataTypes.DATE,
+      deleted_at: dataTypes.DATE
     });
   },
 

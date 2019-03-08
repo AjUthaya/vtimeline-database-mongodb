@@ -15,11 +15,25 @@ module.exports = {
       },
       role_id: {
         allowNull: false,
-        type: dataTypes.INTEGER
+        type: dataTypes.INTEGER,
+        onDelete: "CASCADE",
+        references: {
+          model: {
+            tableName: "roles"
+          },
+          key: "id"
+        }
       },
       permission_id: {
         allowNull: false,
-        type: dataTypes.INTEGER
+        type: dataTypes.INTEGER,
+        onDelete: "CASCADE",
+        references: {
+          model: {
+            tableName: "permissions"
+          },
+          key: "id"
+        }
       },
       created_at: {
         allowNull: false,

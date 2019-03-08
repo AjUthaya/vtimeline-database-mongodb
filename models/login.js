@@ -12,7 +12,10 @@ module.exports = (sequelize, dataTypes) => {
         unique: true,
         primaryKey: true,
         defaultValue: dataTypes.UUIDV4
-      }
+      },
+      ip_address: dataTypes.STRING,
+      browser: dataTypes.STRING,
+      device: dataTypes.STRING
     },
     {
       paranoid: true,

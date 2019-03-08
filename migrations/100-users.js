@@ -35,23 +35,14 @@ module.exports = {
         type: dataTypes.BOOLEAN,
         defaultValue: 0
       },
-      verification_string: {
-        allowNull: true,
-        type: dataTypes.STRING
-      },
+      verification_string: dataTypes.STRING,
       created_at: {
         allowNull: false,
         type: dataTypes.DATE,
         defaultValue: dataTypes.literal("CURRENT_TIMESTAMP")
       },
-      updated_at: {
-        allowNull: true,
-        type: dataTypes.DATE
-      },
-      deleted_at: {
-        allowNull: true,
-        type: dataTypes.DATE
-      }
+      updated_at: dataTypes.DATE,
+      deleted_at: dataTypes.DATE
     });
   },
 

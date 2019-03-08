@@ -18,18 +18,12 @@ module.exports = {
         defaultValue: 1,
         allowNull: false
       },
-      img_url: {
-        type: dataTypes.STRING,
-        allowNull: true
-      },
+      img_url: dataTypes.STRING,
       title: {
         type: dataTypes.STRING,
         allowNull: false
       },
-      description: {
-        type: dataTypes.STRING,
-        allowNull: true
-      },
+      description: dataTypes.STRING,
       start_date: {
         type: dataTypes.DATE,
         allowNull: false
@@ -43,14 +37,8 @@ module.exports = {
         type: dataTypes.DATE,
         defaultValue: dataTypes.literal("CURRENT_TIMESTAMP")
       },
-      updated_at: {
-        allowNull: true,
-        type: dataTypes.DATE
-      },
-      deleted_at: {
-        allowNull: true,
-        type: dataTypes.DATE
-      }
+      updated_at: dataTypes.DATE,
+      deleted_at: dataTypes.DATE
     });
   },
 

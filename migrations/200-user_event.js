@@ -15,11 +15,25 @@ module.exports = {
       },
       user_id: {
         allowNull: false,
-        type: dataTypes.INTEGER
+        type: dataTypes.INTEGER,
+        onDelete: "CASCADE",
+        references: {
+          model: {
+            tableName: "users"
+          },
+          key: "id"
+        }
       },
       event_id: {
         allowNull: false,
-        type: dataTypes.INTEGER
+        type: dataTypes.INTEGER,
+        onDelete: "CASCADE",
+        references: {
+          model: {
+            tableName: "events"
+          },
+          key: "id"
+        }
       },
       created_at: {
         allowNull: false,
