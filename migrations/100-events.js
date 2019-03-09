@@ -13,6 +13,11 @@ module.exports = {
         primaryKey: true,
         defaultValue: dataTypes.INTEGER
       },
+      active: {
+        type: dataTypes.BOOLEAN,
+        defaultValue: true,
+        allowNull: false
+      },
       revision: {
         type: dataTypes.INTEGER,
         defaultValue: 1,
