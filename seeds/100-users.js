@@ -10,10 +10,12 @@ module.exports = {
       },
       [
         {
-          firstname: "test",
-          lastname: "test",
-          email: "test",
-          password: "test"
+          id: 1,
+          firstname: "Test",
+          lastname: "User",
+          email: "app@test.com",
+          password: "iforgot",
+          verified: true
         }
       ],
       {}
